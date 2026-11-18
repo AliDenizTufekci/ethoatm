@@ -1,5 +1,7 @@
 # Ödev: Akıllı ATM ve Bankacılık Simülasyonu
 
+//*bazı kod bloklarını tekrar yazmamak adına kopyala-yapıltır yaptım ama bunlar da tamamen kendi kodlarımdan alınan kopyalardı.Yani yapay zeka kullanmadım//* 
+
 > Bu bir ödev şablonudur. Ödevi **yapay zekâ kullanmadan**, kendi başınıza yapmanız beklenir.
 
 ## Repo Yapısı
