@@ -98,22 +98,33 @@
 | No | Yapılan işlem / girdi | Beklenen sonuç | Programın sonucu | Doğru mu? |
 |---|---|---|---|---|
 | 1 |2,para yatırma, yatmiktar 5000; 1,bakiye gösterme. |1)"ne kadar yatıracaksınız: 2)mevcut bakiyeniz :15000 |1)"ne kadar yatıracaksınız: 2)mevcut bakiyeniz :15000 |Evet |
-| 2 |1,bakiye gösterme;4;çıkış. |1)mevcut bakiyeniz:10000 
-2)bakiyegöstermeişlemisayısı=1
-3)diğer işlemler =0
-4)toplam işlem sayisi=1
-5)çıkış yapılıyor. |1)mevcut bakiyeniz:10000 
-2)bakiyegöstermeişlemisayısı=1
-3)diğer işlemler =0
-4)toplam işlem sayisi=1
-5)çıkış yapılıyor. |Evet |
+| 2 |1,bakiye gösterme;4;çıkış. |1)mevcut bakiyeniz:10000 2)bakiyegöstermeişlemisayısı=13)diğer işlemler =04)toplam işlem sayisi=15)çıkış yapılıyor. |1)mevcut bakiyeniz:10000 2)bakiyegöstermeişlemisayısı=13)diğer işlemler =04)toplam işlem sayisi=15)çıkış yapılıyor. |Evet |
 | 3 |123 |1)gecersiz istek girisi yaptiniz. |1)gecersiz istek girisi yaptiniz.  |Evet |
 | 4 | 3,para çekme;cekmiktar =3000|1)"banka hesabinizdan cekmek istediginiz tutari yaziniz."
 2)Tebrikler!para çekme işleminiz basari ile yerine getirilmistir.|1)"banka hesabinizdan cekmek istediginiz tutari yaziniz."
 2)Tebrikler!para çekme işleminiz basari ile yerine getirilmistir. |Evet |
-| 5 |3,para çekme işlemi;13245=cekmiktar. |1)"banka hesabinizdan cekmek istediginiz tutari yaziniz."
-2)"girdiginiz deger gecersizdir."|1)"banka hesabinizdan cekmek istediginiz tutari yaziniz."
-2)"girdiginiz deger gecersizdir." |Evet |
-| 6 | | | | Evet|
-| 7 | | | |Evet |
-| 8 | | | |Evet |
+| 5 |3,para çekme işlemi;13245=cekmiktar. |1)"banka hesabinizdan cekmek istediginiz tutari yaziniz."2)"girdiginiz deger gecersizdir." 3)yapmak istediginiz isleme gore sayi tiklayiniz.bakiye goruntuleme icin 1,para yatirma icin 2,para cekme icin 3,cikis yapmak icin 4.|1)"banka hesabinizdan cekmek istediginiz tutari yaziniz."2)"girdiginiz deger gecersizdir." yapmak istediginiz isleme gore sayi tiklayiniz.bakiye goruntuleme icin 1,para yatirma icin 2,para cekme icin 3,cikis yapmak icin 4.|Evet |
+| 6 |2,para yatırma;4,çıkış yapma. |1)banka hesabiniza yatirmak istediginiz tutari yaziniz.2)yatirmek istediginiz deger,pozitif bir miktar olmaması sebebiyle gecersiz sayilmistir. 3)yapmak istediginiz isleme gore sayi tiklayiniz.bakiye goruntuleme icin 1,para yatirma icin 2,para cekme icin 3,cikis yapmak icin 4.|1)banka hesabiniza yatirmak istediginiz tutari yaziniz.2)yatirmek istediginiz deger,pozitif bir miktar olmaması sebebiyle gecersiz sayilmistir. 3)yapmak istediginiz isleme gore sayi tiklayiniz.bakiye goruntuleme icin 1,para yatirma icin 2,para cekme icin 3,cikis yapmak icin 4. | Evet|
+| 7 |5,işlem istek girişi |1)"Gecersiz istek girisi yaptiniz."2)yapmak istediginiz isleme gore sayi tiklayiniz.bakiye goruntuleme icin 1,para yatirma icin 2,para cekme icin 3,cikis yapmak icin 4. |1)"Gecersiz istek girisi yaptiniz."2)yapmak istediginiz isleme gore sayi tiklayiniz.bakiye goruntuleme icin 1,para yatirma icin 2,para cekme icin 3,cikis yapmak icin 4. |Evet |
+| 8 |3,işlem isteği;456,cekmiktar;4,çıkış isteği |
+1)banka hesabinizdan cekmek istediginiz tutari yaziniz.
+2)Tebrikler !Para cekme isleminiz basari ile yerine getirilmistir.
+yapmak istediginiz isleme gore sayi tiklayiniz.bakiye goruntuleme icin 1,para yatirma icin 2,para cekme icin 3,cikis yapmak icin 4.
+4)Yaptiginiz parayatirma islemi sayisi: 0
+Yaptiginiz paracekme islemi sayisi: 1
+Yaptiginiz bakiyegosterme  islemi sayisi: 0
+Yaptiginiz toplam islem sayisi: 1
+islemler sonucundaki mevcut  bakiye : 9544
+islemler sonucunda yatirdiginiz para miktari: 0
+islemler sonucunda cektiginiz para miktari: 456
+sistemden cikis yapiliyor. |1)banka hesabinizdan cekmek istediginiz tutari yaziniz.
+2)Tebrikler !Para cekme isleminiz basari ile yerine getirilmistir.
+yapmak istediginiz isleme gore sayi tiklayiniz.bakiye goruntuleme icin 1,para yatirma icin 2,para cekme icin 3,cikis yapmak icin 4.
+4)Yaptiginiz parayatirma islemi sayisi: 0
+Yaptiginiz paracekme islemi sayisi: 1
+Yaptiginiz bakiyegosterme  islemi sayisi: 0
+Yaptiginiz toplam islem sayisi: 1
+islemler sonucundaki mevcut  bakiye : 9544
+islemler sonucunda yatirdiginiz para miktari: 0
+islemler sonucunda cektiginiz para miktari: 456
+sistemden cikis yapiliyor. |Evet |
