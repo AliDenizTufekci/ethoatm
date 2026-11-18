@@ -10,20 +10,83 @@
 ## 2. Girdi - İşlem - Çıktı
 
 **Girdiler:**
--
+1)Kullanıcının ,menü karşısına çıktıkça ne yapmak istediğine bağlı olarak tıklanan tuşlar (1/2/3/4).
+2)Eğer kullanıcı 2 veya 3'e tıkladıysa da yatırılmak-çekilmek istenen para tutarları.
 
 **İşlemler:**
--
-
+1)Eğer kullanıcı uygun bir sayı tıkladı ise ona uygun işleme yönlendirmek, eğer geçersiz bir sayıya tıkladı ise uyarı verecek şekilde çalışmak.
+2)Eğer 2 veya 3'e tıkladı ise girdileri işleyip bakiyede oluşacak tutarları belirlemek.
 **Çıktılar:**
--
-
+1)Kullanıcıya menü göstermek.
+2)Menüde tıklanan sayıya bağlı olarak kullanıcıya bilgi vermek ya da girdi alabilmek amacı ile soru yöneltmek.
+3)Eğer menüde yanlış sayı tıklandı ise uyarı vermek.
 ## 3. Sözde Kod (Pseudocode)
 
 ```
-1.
-2.
-3.
+1.Tanımla:Bakiye=10000,yapılan işlem sayıları, yatırılan tutar-çekilen tutar ,girilen istek komutu.
+2.Do-While döngüsü: açılarak bir işlemin yapılması, sonra önceden belirlenmiş bir koşula göre sonraki aşamalara geçilmesi ya da döngüdeki işlemin tekrarlanması sağlanır.
+3.Buradaki işlemden kasıt şudur:
+4.output:"yapmak istediginiz isleme gore sayi tiklayiniz.bakiye goruntuleme icin 1,para yatirma icin 2,para cekme icin 3,cikis yapmak icin 4."
+5.input:ist(istek komutu)
+6.switch (istek komutu):kullanıcının girdiği istek komutu 1 ise 7'den,2 ise 9'dan   , 3 ise 17'den , 4 ise 25'ten , default(başka ise)33 'ten devam et.
+7.output:"mevcut bakiyeniz "+bakiye+ " kadardir. "
+8.Atama:Bakiyegostermeislemisayisi=bakiyegostermeislemisayisi+1  35'ten devam.      
+
+9.output:"banka hesabiniza yatirmak istediginiz tutari yaziniz."
+10.Girdi:integer yatmiktar
+11.if:yatmiktar>0 12'den,else   16'dan devam et.
+12.atama:bakiye=bakiye+yatmiktar
+13.atama:yatırılan toplam para miktarı =yatırılan toplam para miktarı + yatmiktar 
+14.atama:yatırmaislemisayisi=yatirmaislemisayisi+1
+15.output:"Tebrikler,mevcut bakiyeniz basari ile yenilenmis,yatiriminiz alinmistir."35'ten devam.
+
+16.output:"yatirmek istediginiz deger,pozitif bir miktar olmaması sebebiyle gecersiz sayilmistir."35'ten devam.
+
+17.output:"banka hesabınızdan çekmek istediğiniz tutarı yazınız."
+18.girdi:integer cekmiktar
+19.if :cekmiktar>10000 or cekmiktar<0  20'den ,else 21'den devam et.
+20.output:"girdiginiz deger gecersizdir."35'ten devam.
+
+21.atama:bakiye =bakiye -cekmiktar
+22.atama:toplamparacekmetutari=toplamparacekmetutari+cekmiktar
+23.atama:cekmeişlemisayisi=cekmeişlemisayisi+1
+24.output:"Tebrikler !Para cekme isleminiz basari ile yerine getirilmistir."35'ten devam.
+25.output:"Yaptiginiz parayatirma islemi sayisi: "+ yissay
+26.output:"Yaptiginiz paracekme islemi sayisi: "+ cissay
+27.output:"Yaptiginiz bakiyegosterme  islemi sayisi: "+ bakiyeissay
+28.output:"Yaptiginiz toplam islem sayisi: "+ issay
+29.output:"İslemler sonucundaki mevcut  bakiye : " + bakiye
+30.output:"islemler sonucunda yatirdiginiz para miktari: " + parayt
+31.output:"islemler sonucunda cektiginiz para miktari: " + paract
+32.output:"sistemden cikis yapiliyor.".   35'ten devam.
+
+33.output:"Gecersiz istek girisi yaptiniz."
+34.while:istek!=4 iken bu süreci 4. satırdan itibaren sınırsız sayıda tekrarla.
+35.scanner.close():girdi alımını kapat.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ```
 
 ## 4. Akış Şeması
@@ -34,11 +97,23 @@
 
 | No | Yapılan işlem / girdi | Beklenen sonuç | Programın sonucu | Doğru mu? |
 |---|---|---|---|---|
-| 1 | | | | |
-| 2 | | | | |
-| 3 | | | | |
-| 4 | | | | |
-| 5 | | | | |
-| 6 | | | | |
-| 7 | | | | |
-| 8 | | | | |
+| 1 |2,para yatırma, yatmiktar 5000; 1,bakiye gösterme. |1)"ne kadar yatıracaksınız: 2)mevcut bakiyeniz :15000 |1)"ne kadar yatıracaksınız: 2)mevcut bakiyeniz :15000 |Evet |
+| 2 |1,bakiye gösterme;4;çıkış. |1)mevcut bakiyeniz:10000 
+2)bakiyegöstermeişlemisayısı=1
+3)diğer işlemler =0
+4)toplam işlem sayisi=1
+5)çıkış yapılıyor. |1)mevcut bakiyeniz:10000 
+2)bakiyegöstermeişlemisayısı=1
+3)diğer işlemler =0
+4)toplam işlem sayisi=1
+5)çıkış yapılıyor. |Evet |
+| 3 |123 |1)gecersiz istek girisi yaptiniz. |1)gecersiz istek girisi yaptiniz.  |Evet |
+| 4 | 3,para çekme;cekmiktar =3000|1)"banka hesabinizdan cekmek istediginiz tutari yaziniz."
+2)Tebrikler!para çekme işleminiz basari ile yerine getirilmistir.|1)"banka hesabinizdan cekmek istediginiz tutari yaziniz."
+2)Tebrikler!para çekme işleminiz basari ile yerine getirilmistir. |Evet |
+| 5 |3,para çekme işlemi;13245=cekmiktar. |1)"banka hesabinizdan cekmek istediginiz tutari yaziniz."
+2)"girdiginiz deger gecersizdir."|1)"banka hesabinizdan cekmek istediginiz tutari yaziniz."
+2)"girdiginiz deger gecersizdir." |Evet |
+| 6 | | | | Evet|
+| 7 | | | |Evet |
+| 8 | | | |Evet |
