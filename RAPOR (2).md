@@ -1,5 +1,7 @@
 # Rapor
 
+*Raporun bazı yerlerinde kopyala yapıştır yapsam da herhangi bir YZ yardımı almadım.*
+*rapordaki bağlantıya tıklayınca flowgorythm dosyası çıkmayabilir,repository ana sayfasından o dosyaya ulaşmanız gerekebilir.
 **Ad Soyad:Ali Deniz Tüfekci**
 **Numara:722**
 
