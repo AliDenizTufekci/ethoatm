@@ -1,5 +1,5 @@
 # Rapor
-
+*Raporu oluştururken bazı cevap ve çıktıları ,ana anlamını ve mesajını kaybetmeyecek şekilde kısalttım. Dosyanın daha hızlı okunabilir ve net bir dosya olması adına.*
 *Raporun bazı yerlerinde kopyala yapıştır yapsam da herhangi bir YZ yardımı almadım.*
 *rapordaki bağlantıya tıklayınca flowgorythm dosyası çıkmayabilir,repository ana sayfasından o dosyaya ulaşmanız gerekebilir.
 **Ad Soyad:Ali Deniz Tüfekci**
